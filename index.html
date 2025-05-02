@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Tony Hughes | Graphic Designer for Tech, Blockchain, and Startups</title>
 
@@ -16,37 +16,80 @@
   <meta property="og:type" content="website">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       background: #f5f5f5;
+      color: #333;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
+      min-height: 100vh;
     }
+
     header {
       background: #222;
       color: #fff;
-      width: 100%;
-      text-align: center;
       padding: 1rem;
+      text-align: center;
       font-size: 1.5rem;
     }
-    iframe {
-      border: none;
-      width: 90%;
-      height: 90%;
-      margin-top: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      border-radius: 8px;
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
     }
+
+    .pdf-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .pdf-button:hover {
+      background: #444;
+    }
+
+    iframe {
+      width: 90%;
+      height: 85vh;
+      border: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
     footer {
-      margin-top: 10px;
+      text-align: center;
+      padding: 1rem;
       font-size: 0.9rem;
       color: #777;
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        display: none;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .pdf-button {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -54,9 +97,17 @@
   <header>
     Tony Hughes Design Portfolio
   </header>
-  <iframe src="https://tonyhughesdesign.com/portfolio.pdf" type="application/pdf">
-    <p>Your browser does not support PDFs. <a href="https://tonyhughesdesign.com/portfolio.pdf">Download the PDF</a> instead.</p>
-  </iframe>
+
+  <main>
+    <a class="pdf-button" href="https://tonyhughesdesign.com/portfolio.pdf" target="_blank">
+      View Portfolio PDF
+    </a>
+
+    <iframe 
+      src="https://docs.google.com/gview?url=https://tonyhughesdesign.com/portfolio.pdf&embedded=true">
+    </iframe>
+  </main>
+
   <footer>
     © 2025 Tony Hughes Design
   </footer>
