@@ -2,7 +2,8 @@
 
 Welcome to the portfolio of Tony Hughes — Graphic Designer specialising in branding, UX/UI design, and creative strategy for tech startups, blockchain projects, open-source communities, and developer teams.
 
-Visit my portfolio here: [https://tonyhughesdesign.com/portfolio.pdf]
+Visit my Website portfolio here: [https://tonyhughesdesign.com/]
+Visit my portfolio PDF: [https://tonyhughesdesign.com/portfolio.pdf]
 or my Linkedin here: [https://www.linkedin.com/in/tony-hughes/]
 
 ---
